@@ -13,7 +13,7 @@ def reformat_languages(languages)
 
       if !new_hash[lang_name]  #if new_hash doesn't have a language yet
 
-        new_hash[lang_name] = {:type => type, :style => []}
+        new_hash[lang_name] = {:type => type, :style => [style]}
           #add lang with hash val of type and style pairs
 
       #if new_hash has a lang already:
