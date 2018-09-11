@@ -21,7 +21,7 @@ def reformat_languages(languages)
      # add/push style :symbols --> array as vals of a :style key
 
       end
-
+      
     end
 
   end
