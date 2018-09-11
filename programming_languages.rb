@@ -8,7 +8,7 @@ def reformat_languages(languages)
     lang_hash.each do |lang_name, type_hash|
     # :ruby => {:type => 'interpreted'}
 
-      type_hash[:type] = type
+      type = type_hash[:type]
       #type = string value of type_hash[:type]
 
       if !new_hash[lang_name] #if new_hash doesn't have a language yet, add lang with hash value of type and style
