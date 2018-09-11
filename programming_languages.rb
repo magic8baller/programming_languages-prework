@@ -1,4 +1,4 @@
-require "pry"
+#require "pry"
 def reformat_languages(languages)
 
   new_hash = {}
@@ -16,7 +16,7 @@ def reformat_languages(languages)
 
       #if new_hash has a lang already, just add/push style symbols into an array as values of a :style key
       else new_hash[lang_name][:style] << style
-    binding.binding.pry
+    #binding.binding.pry
 
       end
 
