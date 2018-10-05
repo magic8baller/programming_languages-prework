@@ -1,4 +1,20 @@
 #require "pry"
+#-updated-
+
+def reformat_languages(languages)
+final = {}
+  languages.map do |styles, language_hash| # :oo, {ruby: ...}
+    language_hash.map do |name, type_hash| #:ruby, {type: 'interpreted'}
+      type = type_hash[:type] # var type = 'interpreted'
+      final[name] ||= {type: type, style: []} #conditionally assign hash to :ruby
+      final[name][:style] << styles #then add styles to the :style -> array
+    end
+  end
+final
+end
+
+
+#-original-
 def reformat_languages(languages)
 
   new_hash = {}
